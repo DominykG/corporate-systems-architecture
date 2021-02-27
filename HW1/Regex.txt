@@ -1,0 +1,28 @@
+Checked @ https://regex101.com/
+
+3. An Internet company called retrofitness.com issues e-mail addresses to all employees. 
+The application that adds new employees to the database validates all data before entering it in 
+the database. Write a regular expression that permits the entry of a valid @retrofitness.com e-mail 
+address where the address prefix may contain alphabetical, underscore, hyphen, and dot characters. 
+Note also that the first character in the e-mail address must be an alphabetical character.
+
+/^[a-zA-Z][a-zA-z1-9_\-.]+@(retrofitness\.com)/
+
+4. Write a regular expression that only permits an entry of either “Cable” or “DSL”.
+
+/(Cable)|(DSL)/
+
+5. Write a regular expression to ensure that an age string is valid for all numbers between “1” and “110”.
+
+/^([1-9]|[1-9][0-9]|10[0-9]|110)$/
+
+6. Write an expression that only validates phrases with two or more occurrences of the word substring “go”.
+ Each occurrence of “go” is case insensitive. Sample valid strings include “Go dogs go” and “Ogopogo”.
+
+/.*(go).*(go).*(go)*/i
+
+7. Write an expression to ensure that monetary amounts always begin with a “$” sign, 
+that at least one digit exists on the left side of the decimal point, and that there are always 
+two digits on the right side of the decimal point.
+
+/^\$[0-9]+\.[0-9]{2}$/
